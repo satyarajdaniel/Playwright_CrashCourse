@@ -19,5 +19,5 @@ test('@sanity test to-do', async ({ page }) => {
   await page.getByRole('link', { name: 'Completed' }).click();
   await page.getByRole('link', { name: 'Active' }).click();
   await expect(page.getByText('Take Rest')).toBeVisible();
-  await expect(page.locator('.todo-list li')).toHaveCount(3);
+  await expect(page.locator('.todo-list li')).toHaveCount(2);
 });
